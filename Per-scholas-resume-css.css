@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+h1 {
+    font-family: 'Oxygen', cursive;
+}
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Oxygen', cursive;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main_container {
+  text-align: center;
+  color: white;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border: 5px solid white;
+  box-shadow: 0 0 10px white;
+  margin-bottom: .5px;
+}
+
+.section-title {
+  margin-top: 2px;
+  font-size: 15px;
+  font-weight: normal;
+  text-shadow: 1px 1px 2px white;
+}
+
+.section-bio {
+  margin-top: 2px;
+  font-size: 15px;
+  font-weight: normal;
+  text-shadow: 1px 1px 2px white;
+  padding: 10px 10px;
+}
+
+h1 {
+  font-size: 30px;
+  margin-top: 2px;
+  text-shadow: 1px 1px 2px white;
+}
+
+p {
+  font-style: italic;
+}
+
+.session1:before {
+  content: "👨‍💻";
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.session2:before {
+  content: "💼";
+  font-size: 50px;
+  margin-right: 10px;
+}
+
+.session3:before {
+  content: "💻";
+  font-size: 50px;
+  margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .profile-picture img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+  }
+  
+  .section-bio {
+    font-size: 14px;
+  }
+  
+  .progress-bar {
+    width: 90%;
+  }
+}
+
+
+.progress-bars {
+  font-size: 1.1em;
+  flex-wrap: wrap;
+  padding: 2px;
+}
+
+.progress-bar {
+  width: 50%;
+  height: 30px;
+  margin-bottom: 25px;
+}
+
+.progress-bar .progress-bar-fill {
+  height: 100%;
+  width: 50%;
+  background-color: blue;
+  border-radius: 15px;
+}
